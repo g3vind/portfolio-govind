@@ -1,37 +1,33 @@
 import React from "react";
-import AboutPage from "../pages/AboutPage";
-import Projects from "../pages/Projects";
-import Contact from "../pages/ContactPage";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import me from "../assets/Profile.png";
+import me from "../assets/me.png";
 import { Link } from "react-scroll";
+import Projects from "../pages/Projects";
+import AboutPage from "../pages/AboutPage";
+import ContactPage from "../pages/ContactPage";
 
 const Home = () => {
   return (
     <>
-      <div name="home" className="h-screen w-full">
-        <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+      <div name="home" className="h-screen w-full ">
+        <div className="max-w-screen-lg mx-auto -mt-10 flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div className="flex flex-col justify-center h-full">
-            <h3 className="text-2xl sm:text-7xl font-bold text-black">
-              Hola 👋, I'm Govind Kumar
-            </h3>
-            <p className="text-gray-600 py-4 text-2xl max-w-md">
-              Currently looking for internship or full-time opportunities :)
+            <h2 className="text-4xl sm:text-7xl font-bold text-black">
+              I'm a Full Stack Web Developer
+            </h2>
+            <p className=" py-4 max-w-md text-black">
+              I have 4 years of experience in graphics design and web
+              development. Currently, I love to work on web application using
+              technologies like React, Tailwind, Next.js and Mongodb.
             </p>
             <div>
               <Link
-                to="/resume"
+                to="about"
                 smooth
                 duration={500}
-                className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-gray-500 to-gray-600 cursor-pointer font-semibold"
-                onClick={() => {
-                  window.open(
-                    "https://drive.google.com/drive/folders/1YaO5KXjJPQhBlXwYz9pm8s61T-12Bfi0?usp=drive_link",
-                    "_blank"
-                  );
-                }}
+                className="group text-black w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
               >
-                Hire Me
+                Hire Me :)
                 <span className="group-hover:rotate-90 duration-300">
                   <HiArrowNarrowRight size={25} className="ml-3" />
                 </span>
@@ -42,14 +38,14 @@ const Home = () => {
             <img
               src={me}
               alt="my profile"
-              className="rounded-1xl p-8 mx-auto w-1/3 md:w-full"
+              className="rounded-2xl mx-auto w-2/3 md:w-full"
             />
           </div>
         </div>
       </div>
-      <AboutPage />
       <Projects />
-      <Contact />
+      <AboutPage />
+      <ContactPage />
     </>
   );
 };
