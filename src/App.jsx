@@ -7,6 +7,7 @@ import ContactPage from "./pages/ContactPage";
 import Projects from "./pages/Projects";
 import Skills from "./components/Skills";
 import Certificates from "./pages/Certificates";
+import { ErrorPage } from "./pages/ErrorPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/certificates" element={<Certificates />} />
+        <Route path="/*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </Router>
