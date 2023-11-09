@@ -5,11 +5,11 @@ const Skills = () => {
     <div name="skills" className="-mt-20 w-full h-screen text-gray-300">
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className=" w-full flex justify-center items-center flex-col">
-          <p class="text-3xl text-dark-heading dark:text-light-heading md:text-3xl s xl:text-3xl xl:leading-tight font-bold text-center mt-10 md:mt-30 mb-6">
+        <div className=" w-full flex justify-center items-center mt-16 flex-col">
+          <p class="text-3xl text-dark-heading dark:text-light-heading md:text-3xl s xl:text-3xl xl:leading-tight font-bold text-center mt-16 md:mt-30 mb-6">
             My <span className="yellow">Skills</span>
           </p>
-          <p className="py-4 text-gray-500 mb-2 text-2xl">
+          <p className="py-2 text-gray-500 mb-2 text-2xl">
             Here's a list of technologies I've worked with :)
           </p>
         </div>

@@ -11,18 +11,26 @@ const Home = () => {
     <>
       <div name="home" className="h-screen w-full ">
         <div className="max-w-screen-lg mx-auto -mt-10 flex flex-col items-center justify-center h-full px-4 md:flex-row">
+          <div>
+            <img
+              src={me}
+              alt="my profile"
+              className="rounded-2xl mx-auto mt-2 w-2/3 md:w-full"
+            />
+          </div>
           <div className="flex flex-col justify-center h-full">
             <h2 className="text-4xl sm:text-7xl font-bold text-black">
               I'm a Full Stack Web Developer
             </h2>
-            <p className=" py-4 max-w-md text-black">
-              I have 4 years of experience in graphics design and web
-              development. Currently, I love to work on web application using
-              technologies like React, Tailwind, Next.js and Mongodb.
+            <p className=" py-4 font-medium max-w-md text-gray-500">
+              Reliable intern seeking an internship opportunity to expand skills
+              and gain valuable real-world experience. Organized and can manage
+              multiple priorities with a positive attitude.
             </p>
             <div>
-              <Link
-                to="about"
+              <a
+                href="https://drive.google.com/drive/folders/1YaO5KXjJPQhBlXwYz9pm8s61T-12Bfi0?usp=drive_link"
+                target="_blank"
                 smooth
                 duration={500}
                 className="group text-black w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
@@ -31,15 +39,8 @@ const Home = () => {
                 <span className="group-hover:rotate-90 duration-300">
                   <HiArrowNarrowRight size={25} className="ml-3" />
                 </span>
-              </Link>
+              </a>
             </div>
-          </div>
-          <div>
-            <img
-              src={me}
-              alt="my profile"
-              className="rounded-2xl mx-auto w-2/3 md:w-full"
-            />
           </div>
         </div>
       </div>
