@@ -50,7 +50,7 @@ const ContactPage = ({ isDarkMode }) => {
   };
 
   return (
-    <div>
+    <div className="-mb-6">
       <h1 className="text-3xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-3xl xl:leading-tight font-bold text-center mt-8 ">
         <span className="yellow">Contact</span> Me
       </h1>
@@ -81,6 +81,7 @@ const ContactPage = ({ isDarkMode }) => {
                   onChange={handleChange}
                 />
                 <textarea
+                  style={{ resize: "none" }}
                   id="des"
                   name="message"
                   className={`bg-white p-2 mb-2 ${

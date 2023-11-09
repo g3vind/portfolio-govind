@@ -126,8 +126,10 @@ const Header = () => {
     <>
       <div className=" w-full h-[80px] flex mt-4 justify-around font-semibold items-center px-4 text-black">
         {/* <div>
-        <h1 className=" font-thin text-2xl italic font-serif">GOVIND KUMAR</h1>
-      </div> */}
+          <h1 className=" font-semibold text-xl italic font-serif md:none">
+            𝒢𝒪𝒱𝐼𝒩𝒟 𝒦𝒰𝑀𝒜𝑅
+          </h1>
+        </div> */}
         {/* menu */}
         <ul className="hidden mr-16 md:flex gap-x-8">
           <li className="text-black font-sembold">
@@ -158,30 +160,31 @@ const Header = () => {
           </li>
         </ul>
         {/* Hamburger */}
-        <div onClick={handleClick} className="md:hidden z-10">
+        {/* <div
+          onClick={handleClick}
+          className="md:hidden text-2xl mb-4 pb-4 z-10"
+        >
           {!nav ? <FaBars /> : <FaTimes />}
-        </div>
+        </div> */}
         {/* Mobile menu */}
-        <ul
+        {/* <ul
           className={
             !nav
               ? "hidden"
-              : "absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center"
+              : "absolute top-0 left-0 w-full h-screen flex flex-col bg-gray-500 align-around items-center"
           }
         >
-          <li className="py-6 text-4xl">
+          <li className="py-2 text-2xl">
             <Link onClick={handleClick} to="home" smooth={true} duration={500}>
               Home
             </Link>
           </li>
-          <li className="py-6 text-4xl">
-            {" "}
+          <li className="py-2 text-2xl">
             <Link onClick={handleClick} to="about" smooth={true} duration={500}>
               About
             </Link>
           </li>
-          <li className="py-6 text-4xl">
-            {" "}
+          <li className="py-2 text-2xl">
             <Link
               onClick={handleClick}
               to="skills"
@@ -191,14 +194,12 @@ const Header = () => {
               Skills
             </Link>
           </li>
-          <li className="py-6 text-4xl">
-            {" "}
+          <li className="py-2 text-2xl">
             <Link onClick={handleClick} to="work" smooth={true} duration={500}>
               Work
             </Link>
           </li>
-          <li className="py-6 text-4xl">
-            {" "}
+          <li className="py-2 text-2xl">
             <Link
               onClick={handleClick}
               to="contact"
@@ -208,7 +209,8 @@ const Header = () => {
               Contact
             </Link>
           </li>
-        </ul>
+        </ul> */}
+
         {/* Social icons */}
         <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
           <ul>

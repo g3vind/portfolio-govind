@@ -3,8 +3,9 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import me from "../assets/me.png";
 import { Link } from "react-scroll";
 import Projects from "../pages/Projects";
-import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContactPage";
+import Skills from "../components/Skills";
+import Certificates from "./Certificates";
 
 const Home = () => {
   return (
@@ -23,9 +24,7 @@ const Home = () => {
               I'm a Full Stack Web Developer
             </h2>
             <p className=" py-4 font-medium max-w-md text-gray-500">
-              Reliable intern seeking an internship opportunity to expand skills
-              and gain valuable real-world experience. Organized and can manage
-              multiple priorities with a positive attitude.
+              Looking for internship or full time opportunities :)
             </p>
             <div>
               <a
@@ -44,8 +43,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Skills />
       <Projects />
-      <AboutPage />
+      <Certificates />
       <ContactPage />
     </>
   );
