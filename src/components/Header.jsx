@@ -117,6 +117,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -124,39 +125,42 @@ const Header = () => {
 
   return (
     <>
-      <div className=" w-full h-[80px] flex mt-4 justify-around font-semibold items-center px-4 text-black">
-        {/* <div>
-          <h1 className=" font-semibold text-xl italic font-serif md:none">
-            𝒢𝒪𝒱𝐼𝒩𝒟 𝒦𝒰𝑀𝒜𝑅
-          </h1>
-        </div> */}
+      <div className="w-full h-[80px] flex mt-4 justify-around font-semibold items-center px-4 text-black">
+        <div>
+          <NavLink
+            to="/"
+            className=" font-semibold text-xl italic font-serif md:none"
+          >
+            𝒢𝒪𝒱𝐼𝒩𝒟
+          </NavLink>
+        </div>
         {/* menu */}
         <ul className="hidden mr-16 md:flex gap-x-8">
-          <li className="text-black font-sembold">
-            <Link to="home" smooth={true} duration={500}>
+          <li className="text-black font-sembold cursor-pointer">
+            <NavLink to="home" smooth={true} duration={500}>
               Home
-            </Link>
+            </NavLink>
           </li>
-          <li className="text-black font-sembold">
-            <Link to="projects" smooth={true} duration={500}>
+          <li className="text-black font-sembold cursor-pointer">
+            <NavLink to="projects" smooth={true} duration={500}>
               Projects
-            </Link>
+            </NavLink>
           </li>
-          <li className="text-black font-sembold">
-            <Link to="skills" smooth={true} duration={500}>
+          <li className="text-black font-sembold cursor-pointer">
+            <NavLink to="skills" smooth={true} duration={500}>
               Skills
-            </Link>
+            </NavLink>
           </li>
 
-          <li className="text-black font-sembold">
-            <Link to="certificates" smooth={true} duration={500}>
+          <li className="text-black font-sembold cursor-pointer">
+            <NavLink to="certificates" smooth={true} duration={500}>
               Certificates
-            </Link>
+            </NavLink>
           </li>
-          <li className="text-black font-sembold">
-            <Link to="contact" smooth={true} duration={500}>
+          <li className="text-black font-sembold cursor-pointer">
+            <NavLink to="contact" smooth={true} duration={500}>
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
         {/* Hamburger */}

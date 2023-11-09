@@ -50,7 +50,7 @@ const ContactPage = ({ isDarkMode }) => {
   };
 
   return (
-    <div className="-mb-6">
+    <div className="-mb-16">
       <h1 className="text-3xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-3xl xl:leading-tight font-bold text-center mt-8 ">
         <span className="yellow">Contact</span> Me
       </h1>
