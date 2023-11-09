@@ -18,7 +18,7 @@ function Project({ title, image, description, githubLink }) {
         <h1 className="dark:text-light-heading text-center font-semibold text-lg pt-1">
           {title}
         </h1>
-        <p className="text-content text-center pt-4 pb-4 font-semibold">
+        <p className="text-content text-gray-500 text-center pt-4 pb-4 font-medium">
           {description}
         </p>
       </div>
