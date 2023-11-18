@@ -26,6 +26,15 @@ function Resume() {
     return width > 786 ? 1.7 : 0.6;
   };
 
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = pdf;
+    link.download = "Govind_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="flex items-center justify-center">
       <div className="w-full max-w-screen-xl mx-auto">
@@ -38,11 +47,12 @@ function Resume() {
           <a
             href={pdf}
             rel="noopener noreferrer"
-            className="bg-blue-500 mt-4 text-white py-2 px-4 rounded inline-block"
+            className="bg-blue-500 mt-4 text-white py-3 px-6 rounded inline-block"
+            onClick={handleDownload}
           >
-            <span className="text-center">
+            <span className="flex items-center ">
               <AiOutlineDownload />
-              Download Resume
+              <span className="ml-2">Download Resume</span>
             </span>
           </a>
         </div>

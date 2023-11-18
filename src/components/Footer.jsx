@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <section className="relative overflow-hidden py-2">
+    <section className="relative overflow-hidden py-2 mb-5">
       <div className="container relative z-10 mx-auto px-4">
         <div className="-m-8 flex flex-wrap items-center justify-center">
           {" "}
@@ -12,7 +12,7 @@ export default function Footer() {
               {/* GitHub */}
               <div className="items-center w-auto p-1.5">
                 <a href="https://github.com/g3vind" target="_blank">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 hover:border-gray-400">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 hover:border-gray-400">
                     <svg
                       width="24"
                       height="24"
@@ -34,7 +34,7 @@ export default function Footer() {
                   href="https://www.linkedin.com/in/your-linkedin-username"
                   target="_blank"
                 >
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 hover:border-gray-400">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 hover:border-gray-400">
                     <svg
                       width="24"
                       height="24"
@@ -52,7 +52,7 @@ export default function Footer() {
               </div>
               <div className="w-auto p-1.5">
                 <a href="https://twitter.com/g3vind" target="_blank">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full border border-gray-300 hover:border-gray-400">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 hover:border-gray-400">
                     <svg
                       width="14"
                       height="11"
@@ -71,7 +71,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <p className="p-2 text-center font-medium">
+        <p style={{ fontSize: "19px" }} className="p-2 text-center font-medium">
           Made By{" "}
           <a href="https://www.linkedin.com/in/g3vind/" className="text-bold">
             <span className="text-orange-500 font-semibold">Govind Kumar</span>
