@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 import ThankYou from "../components/ThankYou";
+// import Map from "../components/Map";
 
 const ContactPage = ({ isDarkMode }) => {
   const form = useRef();
@@ -54,11 +55,17 @@ const ContactPage = ({ isDarkMode }) => {
       <h1 className="text-3xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-3xl xl:leading-tight font-bold text-center mt-8 ">
         <span className="yellow">Contact</span> Me
       </h1>
+
       <p className="py-2 text-center text-gray-500 -mb-20 md:text-xl ">
         For any queries or collaboration :)
       </p>
-      <div className={"contact-container p-4 md:justify-center items-center"}>
-        <div className={`contact-card ${isDarkMode ? "bg-black" : ""}`}>
+      <div
+        className={
+          "contact-container p-4 md:justify-center items-center md:flex-row"
+        }
+      >
+        {/* <Map /> */}
+        <div className={`contact-card`}>
           {!submitted ? (
             <div className="">
               <form ref={form} onSubmit={sendEmail}>

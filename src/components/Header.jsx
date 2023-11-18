@@ -35,15 +35,19 @@ const Header = () => {
               Skills
             </NavLink>
           </li>
-
           <li className="text-black font-sembold cursor-pointer">
-            <NavLink to="certificates" smooth={true} duration={500}>
-              Certificates
+            <NavLink to="resume" smooth={true} duration={500}>
+              Resume
             </NavLink>
           </li>
           <li className="text-black font-sembold cursor-pointer">
             <NavLink to="contact" smooth={true} duration={500}>
               Contact
+            </NavLink>
+          </li>
+          <li className="text-black font-sembold cursor-pointer">
+            <NavLink to="certificates" smooth={true} duration={500}>
+              Certificates
             </NavLink>
           </li>
         </ul>

@@ -2,6 +2,7 @@ import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import me from "../assets/me.png";
 import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 import Projects from "../pages/Projects";
 import ContactPage from "../pages/ContactPage";
 import Skills from "../components/Skills";
@@ -27,9 +28,8 @@ const Home = () => {
               Looking for internship or full time opportunities :)
             </p>
             <div>
-              <a
-                href="https://drive.google.com/drive/folders/1YaO5KXjJPQhBlXwYz9pm8s61T-12Bfi0?usp=drive_link"
-                target="_blank"
+              <NavLink
+                to="/resume"
                 smooth
                 duration={500}
                 className="group text-black w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
@@ -38,7 +38,7 @@ const Home = () => {
                 <span className="group-hover:rotate-90 duration-300">
                   <HiArrowNarrowRight size={25} className="ml-3" />
                 </span>
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>

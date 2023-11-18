@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import Skills from "./components/Skills";
 import Certificates from "./pages/Certificates";
 import { ErrorPage } from "./pages/ErrorPage";
+import Resume from "./pages/Resume";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/resume" element={<Resume />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/certificates" element={<Certificates />} />
         <Route path="/*" element={<ErrorPage />} />
