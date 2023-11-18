@@ -107,28 +107,12 @@ export const projectDetails = [
     githubLink: "https://github.com/g3vind/bca-blogs",
   },
   {
-    title: "CricLive",
-    image: projectImage4,
-    description: `A chrome extension for live cricket updates `,
-    techstack: "HTML5, CSS3 , JavaScript",
-    previewLink: "https://cricliveapp.netlify.app/",
-    githubLink: "https://github.com/g3vind/criclive",
-  },
-  {
-    title: "Image Search App",
-    image: projectImage6,
-    description: `A web application to search for images`,
+    title: "MERN To-Do App",
+    image: projectImage3,
+    description: `To-Do App for managing tasks`,
     techstack: "HTML5, CSS3, JavaScript",
-    previewLink: "https://search-image-for-you.netlify.app/",
-    githubLink: "https://github.com/g3vind/image-search-app",
-  },
-  {
-    title: "Expense Tracker App",
-    image: projectImage10,
-    description: `App to manage your expenses and income.`,
-    techstack: "Reactjs, Context API",
-    previewLink: "https://expenses-tracker-react-app1.netlify.app/",
-    githubLink: "https://github.com/g3vind/expense-tracker-react",
+    previewLink: "https://clone-using-html-css-js.netlify.app/",
+    githubLink: "https://github.com/g3vind/mern-todo",
   },
   {
     title: "Text Utility App",
@@ -139,6 +123,32 @@ export const projectDetails = [
       "https://64b236161f52c15666151da6--hilarious-chimera-7f48d0.netlify.app//",
     githubLink: "https://github.com/g3vind/",
   },
+  {
+    title: "Image Search App",
+    image: projectImage6,
+    description: `A web application to search for images`,
+    techstack: "HTML5, CSS3, JavaScript",
+    previewLink: "https://search-image-for-you.netlify.app/",
+    githubLink: "https://github.com/g3vind/image-search-app",
+  },
+  {
+    title: "CricLive",
+    image: projectImage4,
+    description: `A chrome extension for live cricket updates `,
+    techstack: "HTML5, CSS3 , JavaScript",
+    previewLink: "https://cricliveapp.netlify.app/",
+    githubLink: "https://github.com/g3vind/criclive",
+  },
+
+  {
+    title: "Expense Tracker App",
+    image: projectImage10,
+    description: `App to manage your expenses and income.`,
+    techstack: "Reactjs, Context API",
+    previewLink: "https://expenses-tracker-react-app1.netlify.app/",
+    githubLink: "https://github.com/g3vind/expense-tracker-react",
+  },
+
   {
     title: "To Do List",
     image: projectImage5,
@@ -154,15 +164,6 @@ export const projectDetails = [
     techstack: "HTML5, CSS3, JavaScript, DOM Manipulation",
     previewLink: "https://memory-based-game-using-js.netlify.app/",
     githubLink: "https://github.com/g3vind/Memory-Based-Game",
-  },
-
-  {
-    title: "Netflix Clone",
-    image: projectImage3,
-    description: `Exact clone of netflix india website`,
-    techstack: "HTML5, CSS3, JavaScript",
-    previewLink: "https://clone-using-html-css-js.netlify.app/",
-    githubLink: "https://github.com/g3vind/netflix-clone",
   },
 ];
 

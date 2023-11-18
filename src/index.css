@@ -247,17 +247,66 @@ button[type="submit"]:hover {
   margin-top: -30px;
 }
 
+.avatar-container {
+  margin-bottom: 20px;
+}
+
+.avatar {
+  display: none;
+}
+
+.username {
+  display: none;
+}
+#works {
+  color: black;
+}
+
+.followers {
+  display: none;
+}
+
+.github-calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* height: 100px; */
+  width: 100%;
+  margin: 10px;
+  /* border: 2px solid black; */
+}
+.github-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -60px;
+}
+
 /* Contact.css */
 .contact-container {
   display: flex;
   justify-content: center;
   margin-left: 20px;
-  align-items: center;
-  min-height: 80vh;
+  align-items: center; /* Center vertically */
+  min-height: 80vh; /* Ensure full viewport height */
+  width: 350pxvw;
 }
-
+.map-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.map {
+  margin: 0px;
+  height: 30vh;
+  width: 80vw;
+  margin-left: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
 .contact-card {
-  width: 30vw;
   background-color: white;
   color: #fff;
   padding: 20px;
@@ -265,9 +314,6 @@ button[type="submit"]:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   text-align: center;
   margin-top: -20px;
-}
-#mp {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .c-left {
@@ -785,23 +831,4 @@ input:checked + .slider:before {
   border: 2px solid orange;
   background-color: #0e1111;
   color: white;
-}
-
-/* Resume */
-.resume-container {
-  position: relative;
-}
-
-.text-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
 }
