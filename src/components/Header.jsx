@@ -10,15 +10,15 @@ const Header = () => {
 
   return (
     <>
-      <div className="w-full h-[80px] flex mt-4 justify-around font-semibold items-center px-4 text-black">
-        {/* <div>
+      <div className="w-full h-[80px] flex mt-6 justify-around font-semibold items-center px-4 text-black">
+        <div>
           <NavLink
             to="/"
             className=" font-semibold text-xl italic font-serif md:none"
           >
-            𝒢𝒪𝒱𝐼𝒩𝒟
+            {/* 𝒢𝒪𝒱𝐼𝒩𝒟 */}
           </NavLink>
-        </div> */}
+        </div>
         {/* menu */}
         <ul className="hidden mr-16 md:flex gap-x-8">
           <li className="text-black font-semibold cursor-pointer">
