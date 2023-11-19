@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="w-full h-[80px] flex mt-6  ml-20 justify-around font-semibold items-center px-4 text-black">
+      <div className="w-full h-[80px] flex mt-6  ml-16 justify-around font-semibold items-center px-4 text-black">
         <div>
           <NavLink
             to="/"
