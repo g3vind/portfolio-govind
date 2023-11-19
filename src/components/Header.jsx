@@ -42,13 +42,13 @@ const Header = () => {
             </NavLink>
           </li>
           <li className="text-black font-sembold cursor-pointer">
-            <NavLink to="contact" smooth={true} duration={500}>
-              Contact
+            <NavLink to="certificates" smooth={true} duration={500}>
+              Certificates
             </NavLink>
           </li>
           <li className="text-black font-sembold cursor-pointer">
-            <NavLink to="certificates" smooth={true} duration={500}>
-              Certificates
+            <NavLink to="contact" smooth={true} duration={500}>
+              Contact
             </NavLink>
           </li>
         </ul>
@@ -107,21 +107,21 @@ const Header = () => {
           <li className="py-2 text-2xl">
             <Link
               onClick={handleClick}
-              to="contact"
-              smooth={true}
-              duration={500}
-            >
-              Contact
-            </Link>
-          </li>
-          <li className="py-2 text-2xl">
-            <Link
-              onClick={handleClick}
               to="certificates"
               smooth={true}
               duration={500}
             >
               Certificates
+            </Link>
+          </li>
+          <li className="py-2 text-2xl">
+            <Link
+              onClick={handleClick}
+              to="contact"
+              smooth={true}
+              duration={500}
+            >
+              Contact
             </Link>
           </li>
         </ul>
