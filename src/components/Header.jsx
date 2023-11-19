@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
-
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
@@ -10,17 +11,17 @@ const Header = () => {
   return (
     <>
       <div className="w-full h-[80px] flex mt-4 justify-around font-semibold items-center px-4 text-black">
-        <div>
+        {/* <div>
           <NavLink
             to="/"
             className=" font-semibold text-xl italic font-serif md:none"
           >
             𝒢𝒪𝒱𝐼𝒩𝒟
           </NavLink>
-        </div>
+        </div> */}
         {/* menu */}
         <ul className="hidden mr-16 md:flex gap-x-8">
-          <li className="text-black font-sembold cursor-pointer">
+          <li className="text-black font-semibold cursor-pointer">
             <NavLink to="home" smooth={true} duration={500}>
               Home
             </NavLink>
@@ -52,28 +53,35 @@ const Header = () => {
           </li>
         </ul>
         {/* Hamburger */}
-        {/* <div
+        <div
           onClick={handleClick}
           className="md:hidden text-2xl mb-4 pb-4 z-10"
         >
           {!nav ? <FaBars /> : <FaTimes />}
-        </div> */}
+        </div>
         {/* Mobile menu */}
-        {/* <ul
+        <ul
+          style={{ zIndex: "200" }}
           className={
             !nav
               ? "hidden"
-              : "absolute top-0 left-0 w-full h-screen flex flex-col bg-gray-500 align-around items-center"
+              : "absolute top-0 left-0 w-full h-screen mb-4 flex flex-col bg-gray-500 align-around items-center"
           }
         >
-          <li className="py-2 text-2xl">
+          <li className="py-2 text-2xl mt-3">
             <Link onClick={handleClick} to="home" smooth={true} duration={500}>
               Home
             </Link>
           </li>
           <li className="py-2 text-2xl">
-            <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-              About
+            <Link
+              style={{ zIndex: "190" }}
+              onClick={handleClick}
+              to="projects"
+              smooth={true}
+              duration={500}
+            >
+              Projects
             </Link>
           </li>
           <li className="py-2 text-2xl">
@@ -87,8 +95,13 @@ const Header = () => {
             </Link>
           </li>
           <li className="py-2 text-2xl">
-            <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-              Work
+            <Link
+              onClick={handleClick}
+              to="resume"
+              smooth={true}
+              duration={500}
+            >
+              Resume
             </Link>
           </li>
           <li className="py-2 text-2xl">
@@ -101,7 +114,17 @@ const Header = () => {
               Contact
             </Link>
           </li>
-        </ul> */}
+          <li className="py-2 text-2xl">
+            <Link
+              onClick={handleClick}
+              to="certificates"
+              smooth={true}
+              duration={500}
+            >
+              Certificates
+            </Link>
+          </li>
+        </ul>
 
         {/* Social icons */}
         <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
