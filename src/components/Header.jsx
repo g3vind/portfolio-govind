@@ -55,7 +55,7 @@ const Header = () => {
         {/* Hamburger */}
         <div
           onClick={handleClick}
-          className="md:hidden text-2xl mb-4 pb-4 z-10"
+          className="md:hidden text-3xl mb-4 pb-4 z-10"
         >
           {!nav ? <FaBars /> : <FaTimes />}
         </div>
@@ -65,7 +65,7 @@ const Header = () => {
           className={
             !nav
               ? "hidden"
-              : "absolute top-0 left-0 w-full h-screen mb-4 flex flex-col bg-gray-500 align-around items-center"
+              : "absolute top-0 left-0 w-full h-screen mb-4 flex flex-col bg-gray-500 justify-center font-semibold items-center"
           }
         >
           <li className="py-2 text-2xl mt-3">
