@@ -22,7 +22,7 @@ const Home = () => {
           </div>
           <div className="flex flex-col justify-center h-full">
             <h2 className="text-4xl sm:text-7xl font-bold text-black">
-              I'm a Full Stack Web Developer
+              I'm a Frontend Web Developer
             </h2>
             <p className=" py-4 font-medium max-w-md text-gray-500">
               Looking for internship or full time opportunities :)
