@@ -26,15 +26,15 @@ import firebase from "./assets/techstack/firebase.png";
 
 // Porject Images
 import projectImage1 from "./assets/projects/Project1.png";
-import projectImage2 from "./assets/projects/Project 2.png";
+import projectImage2 from "./assets/projects/Project2.png";
 import projectImage3 from "./assets/projects/Project3.png";
-import projectImage9 from "./assets/projects/Project2.png";
+// import projectImage9 from "./assets/projects/Project2.png";
 import projectImage4 from "./assets/projects/Project4.png";
 import projectImage5 from "./assets/projects/Project5.png";
 import projectImage6 from "./assets/projects/Project 6.png";
 import projectImage8 from "./assets/projects/Project8.png";
 import projectImage10 from "./assets/projects/Project10.png";
-
+import projectImage11 from "./assets/projects/Project11.png";
 // Certificate Images
 import c1 from "./assets/certificates/Certificate1.png";
 import c2 from "./assets/certificates/Certificate2.png";
@@ -99,9 +99,25 @@ export const projectDetails = [
     githubLink: "https://github.com/g3vind/namaste-food",
   },
   {
-    title: "BCA Blogs",
+    title: "Youtube Clone",
+    image: projectImage11,
+    description: `Youtube Clone With Functionalities`,
+    techstack: "ReactJs, Axios, Tailwind CSS, React Router DOM",
+    previewLink: "https://youtube-clone11.vercel.app/",
+    githubLink: "https://github.com/g3vind/youtube-clone",
+  },
+  {
+    title: "Typing Master",
+    image: projectImage5,
+    description: `Website for typing speed and accuracy detection`,
+    techstack: "React.js, Firebase",
+    previewLink: "https://what-to-do-list1.netlify.app/",
+    githubLink: "https://github.com/g3vind/typing-master",
+  },
+  {
+    title: "MCA Blogs",
     image: projectImage2,
-    description: `A Blogging Website for BCA Graduates`,
+    description: `Blogging Website with Google Authentication `,
     techstack: `React.js, React Router DOM, JSON Server`,
     previewLink: "https://bca-blogs.netlify.app/",
     githubLink: "https://github.com/g3vind/bca-blogs",
@@ -115,13 +131,12 @@ export const projectDetails = [
     githubLink: "https://github.com/g3vind/mern-todo",
   },
   {
-    title: "Text Utility App",
+    title: "Crypto Snap",
     image: projectImage8,
-    description: `App for handling your text works`,
-    techstack: "Reactjs, Bootstrap",
-    previewLink:
-      "https://64b236161f52c15666151da6--hilarious-chimera-7f48d0.netlify.app//",
-    githubLink: "https://github.com/g3vind/",
+    description: `Crypto Tracker Website`,
+    techstack: "Reactjs, Chartjs, Tailwind",
+    previewLink: "https://crypto-snap.vercel.app/",
+    githubLink: "https://github.com/g3vind/crypto-snap",
   },
   {
     title: "Image Search App",
@@ -147,23 +162,6 @@ export const projectDetails = [
     techstack: "Reactjs, Context API",
     previewLink: "https://expenses-tracker-react-app1.netlify.app/",
     githubLink: "https://github.com/g3vind/expense-tracker-react",
-  },
-
-  {
-    title: "To Do List",
-    image: projectImage5,
-    description: `A Simple To Do App for managing taskss`,
-    techstack: "HTML5, CSS3, JavaScript",
-    previewLink: "https://what-to-do-list1.netlify.app/",
-    githubLink: "https://github.com/g3vind/To-Do-List",
-  },
-  {
-    title: "Memory Based Game",
-    image: projectImage9,
-    description: `A Memory Based Game for quick fun`,
-    techstack: "HTML5, CSS3, JavaScript, DOM Manipulation",
-    previewLink: "https://memory-based-game-using-js.netlify.app/",
-    githubLink: "https://github.com/g3vind/Memory-Based-Game",
   },
 ];
 
@@ -194,8 +192,8 @@ export const certificatesData = [
   },
   {
     id: 5,
-    title: "Learn the web: Internet Fundamentals",
-    link: "https://codedamn.com/certificate/verify/d452c9327945a8ad8e13ccabe42eeaa27fdd9fa7",
+    title: "Responsive Web Design - freeCodeCamp",
+    link: "https://www.freecodecamp.org/certification/g3vind/responsive-web-design",
     imageUrl: c5,
   },
   {
