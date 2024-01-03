@@ -28,7 +28,6 @@ import firebase from "./assets/techstack/firebase.png";
 import projectImage1 from "./assets/projects/Project1.png";
 import projectImage2 from "./assets/projects/Project2.png";
 import projectImage3 from "./assets/projects/Project3.png";
-// import projectImage9 from "./assets/projects/Project2.png";
 import projectImage4 from "./assets/projects/Project4.png";
 import projectImage5 from "./assets/projects/Project5.png";
 import projectImage6 from "./assets/projects/Project 6.png";
@@ -91,12 +90,12 @@ export const techStackDetails = {
 // Enter your Project Details here
 export const projectDetails = [
   {
-    title: "Namaste Food",
+    title: "Swiggy Clone",
     image: projectImage1,
-    description: `An Online Food Ordering Website`,
+    description: `A Clone of Swiggy's Website`,
     techstack: "ReactJs, Tailwind CSS, React Router DOM",
-    previewLink: "https://namaste-food-app.netlify.app/",
-    githubLink: "https://github.com/g3vind/namaste-food",
+    previewLink: "https://swiggy-clone11.vercel.app/",
+    githubLink: "https://github.com/g3vind/swiggy-clone",
   },
   {
     title: "Youtube Clone",
