@@ -19,21 +19,20 @@ body {
   color: #252423;
 }
 
-/* Basic styles for list items */
-li {
+
+li, li>svg {
   font-size: 18px;
   margin-bottom: 8px;
-  transition: color 0.3s, font-weight 0.3s; /* Smooth transition on hover */
+  transition: color 0.3s, font-weight 0.3s; 
 }
 
 /* Hover effect */
 li:hover {
   color: #ffca28;
-  font-weight: 600; /* Increase font weight on hover */
-  transform: scale(1.05); /* Scale up the item on hover */
+  font-weight: 600; 
+  transform: scale(1.05); 
 }
 
-/* Animation on hover */
 @keyframes bounce {
   0%,
   100% {
@@ -45,7 +44,7 @@ li:hover {
 }
 
 li:hover {
-  animation: bounce 0.5s ease infinite; /* Apply the bounce animation on hover */
+  animation: bounce 0.5s ease infinite; 
 }
 
 .max-width {
