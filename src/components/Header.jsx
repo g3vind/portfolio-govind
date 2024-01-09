@@ -10,8 +10,8 @@ const Header = () => {
 
   return (
     <>
-      <div className="w-full h-[80px] flex mt-6  font-2xl ml-16 justify-around font-semibold items-center px-4 text-black">
-        <ul className="hidden mr-16 md:flex gap-x-8">
+      <div className="w-full h-[80px] flex mt-6  font-2xl ml-16 justify-around font-semibold items-center px-10 text-black">
+        <ul className="hidden mr-16 md:flex gap-x-14">
           <li className="text-black text-xl font-semibold cursor-pointer flex items-center">
             <NavLink
               to="home"
@@ -19,7 +19,6 @@ const Header = () => {
               duration={500}
               className="flex items-center"
             >
-              Home
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -44,7 +43,6 @@ const Header = () => {
               smooth={true}
               duration={500}
             >
-              Projects
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -68,7 +66,6 @@ const Header = () => {
               smooth={true}
               duration={500}
             >
-              Skills
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -92,7 +89,6 @@ const Header = () => {
               smooth={true}
               duration={500}
             >
-              Resume
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -117,7 +113,6 @@ const Header = () => {
               smooth={true}
               duration={500}
             >
-              Contact
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -138,7 +133,7 @@ const Header = () => {
         {/* Hamburger */}
         <div
           onClick={handleClick}
-          className="md:hidden text-3xl mb-4 pb-4 z-10"
+          className="md:hidden justify-between text-3xl mb-4 -mr-24 pb-4 z-10"
         >
           {!nav ? <FaBars /> : <FaTimes />}
         </div>
