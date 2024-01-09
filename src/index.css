@@ -831,3 +831,30 @@ input:checked + .slider:before {
   background-color: #0e1111;
   color: white;
 }
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(20deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+.hand-emoji {
+
+  font-size: 3.4rem;
+  animation: wave 2s infinite;
+  display: inline-block;
+}

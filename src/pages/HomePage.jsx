@@ -13,7 +13,7 @@ const Home = () => {
         {/* left */}
         <div className="flex flex-col w-full ml-28 md:w-1/2">
           <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-2 md:mb-4">
-            Hi There,
+            Hi There👋,
           </h1>
           <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-2 md:mb-4">
             I'm Govind Kumar
@@ -39,7 +39,7 @@ const Home = () => {
 
           <div className="flex flex-row flex-wrap gap-2">
             <NavLink
-              to="/projects"
+              to="/resume"
               className="bg-blue-500 text-white py-2 px-4 rounded-full text-center mb-2 md:mb-0 hover:bg-blue-600 transition duration-300"
             >
               Hire Me <HiArrowNarrowRight className="inline-block ml-2" />
