@@ -1,66 +1,86 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import dp from "../assets/dp.jpg";
+import ai from "../assets/ai.jpg";
 import { NavLink } from "react-router-dom";
 import Typewriter from "typewriter-effect";
-import Projects from "../pages/Projects";
-import ContactPage from "../pages/ContactPage";
-import Skills from "../components/Skills";
-import Certificates from "./Certificates";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { MdOutlineMailOutline } from "react-icons/md";
 
 const Home = () => {
   return (
     <>
-      <div name="home" className="h-screen w-full flex flex-row ">
-        <div className="max-w-screen-lg mx-auto -mt-20  flex flex-col items-center justify-center h-full px-4 md:flex-row">
-          <div>
-            <img src={dp} className="w-80 h-90 rounded-3xl m-10" />
-          </div>
-          <div className="flex flex-col justify-center h-full">
-            <h1 className="text-3xl sm:text-5xl font-bold text-black">
-              Hi✋, I'm Govind
-            </h1>
-            <div className="flex flex-row text-2xl sm:text-2xl font-bold text-black">
-              <span className="mt-4 text-2xl">I love to code in&nbsp;</span>
-              <span className="font-extrabold fon mt-4">
-                <Typewriter
-                  options={{
-                    strings: [
-                      "Java",
-                      "Reactjs",
-                      "Nodejs",
-                      "JavaScript",
-                      "TypeScript",
-                    ],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-              </span>
-            </div>
-            <p className=" py-4 font-medium max-w-md mt-4 text-gray-500">
-              Looking for internship or full time opportunities :)
-            </p>
-            <div className="flex flex-row ">
-              <NavLink
-                to="/resume"
-                smooth
-                duration={500}
-                className="group text-black w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
-              >
-                Hire Me :)
-                <span className="group-hover:rotate-90 duration-300">
-                  <HiArrowNarrowRight size={25} className="ml-3" />
-                </span>
-              </NavLink>
-            </div>
+      <div className="md:flex items-center m-10 md:m-20 mb-12 md:mb-40 px-4 -mt-0.2 py-8 md:py-16 lg:px-8 xl:px-16">
+        {/* left */}
+        <div className="flex flex-col w-full ml-28 md:w-1/2">
+          <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-2 md:mb-4">
+            Hi There,
+          </h1>
+          <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-2 md:mb-4">
+            I'm Govind Kumar
+          </h1>
+          <h2 className="text-sm md:text-2xl mb-4 md:mb-6 flex items-center">
+            <span className="text-blue-500">I am into&nbsp; </span>
+            <Typewriter
+              options={{
+                strings: [
+                  "Core Java",
+                  "Reactjs",
+                  "Nodejs",
+                  "Redux Toolkit",
+                  "JavaScript",
+                  "React Native",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+              className="ml-4 font-bold"
+            />
+          </h2>
+
+          <div className="flex flex-row flex-wrap gap-2">
+            <NavLink
+              to="/projects"
+              className="bg-blue-500 text-white py-2 px-4 rounded-full text-center mb-2 md:mb-0 hover:bg-blue-600 transition duration-300"
+            >
+              Hire Me <HiArrowNarrowRight className="inline-block ml-2" />
+            </NavLink>
+            <NavLink
+              to="https://www.github.com/g3vind"
+              className="bg-blue-500 text-white py-2 px-4 rounded-full text-center mb-2 md:mb-0 hover:bg-blue-600 transition duration-300"
+            >
+              <FaGithub size={20} className="" />
+            </NavLink>
+            <NavLink
+              to="https://www.linkedin.com/in/g3vind"
+              className="bg-blue-500 text-white py-2 px-4 rounded-full text-center mb-2 md:mb-0 hover:bg-blue-600 transition duration-300"
+            >
+              <FaLinkedin size={20} className="" />
+            </NavLink>
+            <NavLink
+              to="https://www.twitter.com/g3vind"
+              target="_blank"
+              className="bg-blue-500 text-white py-2 px-4 rounded-full text-center mb-2 md:mb-0 hover:bg-blue-600 transition duration-300"
+            >
+              <FaTwitter size={20} className="" />
+            </NavLink>
+            <NavLink
+              target="_blank"
+              to="mailto://g3vind@gmail.com"
+              className="bg-blue-500 text-white py-2 px-4 rounded-full text-center mb-2 md:mb-0 hover:bg-blue-600 transition duration-300"
+            >
+              <MdOutlineMailOutline size={20} className="" />
+            </NavLink>
           </div>
         </div>
+        {/* right */}
+        <div className="hidden md:block ml-60 w-full md:w-1/2">
+          <img
+            src={ai}
+            alt="AI Image"
+            className="rounded-2xl h-48 md:h-80 w-80 object-cover"
+          />
+        </div>
       </div>
-      {/* <Skills />
-      <Projects />
-      <Certificates />
-      <ContactPage /> */}
     </>
   );
 };

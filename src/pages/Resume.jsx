@@ -36,7 +36,7 @@ function Resume() {
   };
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center mt-6 justify-center">
       <div className="w-full max-w-screen-xl mx-auto">
         <div className="resume-container relative">
           <Document file={pdf} className="flex justify-center">
