@@ -1,8 +1,8 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import me from "../assets/me.png";
-import { Link } from "react-scroll";
+import dp from "../assets/dp.jpg";
 import { NavLink } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 import Projects from "../pages/Projects";
 import ContactPage from "../pages/ContactPage";
 import Skills from "../components/Skills";
@@ -11,20 +11,34 @@ import Certificates from "./Certificates";
 const Home = () => {
   return (
     <>
-      <div name="home" className="h-screen w-full ">
-        <div className="max-w-screen-lg mx-auto -mt-10 flex flex-col items-center justify-center h-full px-4 md:flex-row">
+      <div name="home" className="h-screen w-full flex flex-row ">
+        <div className="max-w-screen-lg mx-auto -mt-20  flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div>
-            <img
-              src={me}
-              alt="my profile"
-              className="rounded-2xl mx-auto mt-2 w-2/3 md:w-full"
-            />
+            <img src={dp} className="w-80 h-90 rounded-3xl m-10" />
           </div>
           <div className="flex flex-col justify-center h-full">
-            <h2 className="text-4xl sm:text-7xl font-bold text-black">
-              I'm a Frontend Web Developer
-            </h2>
-            <p className=" py-4 font-medium max-w-md text-gray-500">
+            <h1 className="text-3xl sm:text-5xl font-bold text-black">
+              Hi✋, I'm Govind
+            </h1>
+            <div className="flex flex-row text-2xl sm:text-2xl font-bold text-black">
+              <span className="mt-4 text-2xl">I love to code in&nbsp;</span>
+              <span className="font-extrabold fon mt-4">
+                <Typewriter
+                  options={{
+                    strings: [
+                      "Java",
+                      "Reactjs",
+                      "Nodejs",
+                      "JavaScript",
+                      "TypeScript",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </span>
+            </div>
+            <p className=" py-4 font-medium max-w-md mt-4 text-gray-500">
               Looking for internship or full time opportunities :)
             </p>
             <div className="flex flex-row ">
@@ -43,10 +57,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Skills />
+      {/* <Skills />
       <Projects />
       <Certificates />
-      <ContactPage />
+      <ContactPage /> */}
     </>
   );
 };

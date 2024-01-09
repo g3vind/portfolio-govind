@@ -133,7 +133,7 @@ const Header = () => {
         {/* Hamburger */}
         <div
           onClick={handleClick}
-          className="md:hidden justify-between text-3xl mb-4 -mr-24 pb-4 z-10"
+          className="md:hidden justify-between text-3xl mb-4 -mr-2 pb-4 z-10"
         >
           {!nav ? <FaBars /> : <FaTimes />}
         </div>
