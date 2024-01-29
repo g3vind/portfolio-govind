@@ -1,4 +1,3 @@
-import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import ai from "../assets/ai.jpg";
 import { NavLink } from "react-router-dom";
@@ -9,16 +8,25 @@ import { MdOutlineMailOutline } from "react-icons/md";
 const Home = () => {
   return (
     <>
-      <div className="md:flex items-center m-10 md:m-20 mb-12 md:mb-40 px-4 -mt-0.2 py-8 md:py-16 lg:px-8 xl:px-16">
+      <div className="md:flex items-center m-4 md:m-10 mb-6 md:mb-28 px-4 py-4 md:py-8 lg:px-8 xl:px-16">
         {/* left */}
-        <div className="flex flex-col w-full ml-28 md:w-1/2">
-          <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-2 md:mb-4">
+        <div className="w-full md:w-1/2 mt-4 md:mt-0 mb-4 md:mb-0 md:mr-4">
+          <img
+            src={ai}
+            alt="AI Image"
+            className="rounded-2xl h-48 md:h-80 w-full object-contain mb-4 md:mb-0 md:mr-0"
+          />
+        </div>
+
+        {/* right */}
+        <div className="flex flex-col w-full md:w-1/2">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4">
             Hi There👋,
           </h1>
-          <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold mb-2 md:mb-4">
-            I'm Govind Kumar
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4">
+            I am Govind Kumar
           </h1>
-          <h2 className="text-sm md:text-2xl mb-4 md:mb-6 flex items-center">
+          <h2 className="text-sm md:text-xl mb-4 md:mb-6 flex items-center">
             <span className="text-blue-500">I am into&nbsp; </span>
             <Typewriter
               options={{
@@ -33,11 +41,11 @@ const Home = () => {
                 autoStart: true,
                 loop: true,
               }}
-              className="ml-4 font-bold"
+              className="ml-2 md:ml-4 font-bold"
             />
           </h2>
 
-          <div className="flex flex-row flex-wrap gap-2">
+          <div className="flex flex-col md:flex-row flex-wrap gap-2">
             <NavLink
               to="/resume"
               className="bg-blue-500 text-white py-2 px-4 rounded-full text-center mb-2 md:mb-0 hover:bg-blue-600 transition duration-300"
@@ -52,7 +60,7 @@ const Home = () => {
             </NavLink>
             <NavLink
               to="https://www.linkedin.com/in/g3vind"
-              className="bg-blue-500 text-white py-2 px-4 rounded-full text-center mb-2 md:mb-0 hover:bg-blue-600 transition duration-300"
+              className="bg-blue-500 text-white py-2 px-4 rounded-full text-center mb-2 md:mb-0 hover:bg-blue-600 transition duration-300 flex-1 md:flex-initial"
             >
               <FaLinkedin size={20} className="" />
             </NavLink>
@@ -72,16 +80,9 @@ const Home = () => {
             </NavLink>
           </div>
         </div>
-        {/* right */}
-        <div className="hidden md:block ml-60 w-full md:w-1/2">
-          <img
-            src={ai}
-            alt="AI Image"
-            className="rounded-2xl h-48 md:h-80 w-80 object-cover"
-          />
-        </div>
       </div>
     </>
   );
 };
+
 export default Home;
