@@ -48,7 +48,6 @@ const Home = () => {
           <div className="flex flex-col md:flex-row flex-wrap gap-2">
             <NavLink
               to="/resume"
-              target="_blank"
               className="bg-blue-500 text-white py-2 px-4 rounded-full text-center mb-2 md:mb-0 hover:bg-blue-600 transition duration-300"
             >
               Hire Me <HiArrowNarrowRight className="inline-block ml-2" />
