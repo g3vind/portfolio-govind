@@ -1,5 +1,5 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
-import ai from "../assets/ai.jpg";
+import ai from "../assets/profile.jpg";
 import { NavLink } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -12,6 +12,7 @@ const Home = () => {
         {/* left */}
         <div className="w-full md:w-1/2 mt-4 md:mt-0 mb-4 md:mb-0 md:mr-4">
           <img
+            style={{ borderRadius: "10px" }}
             src={ai}
             alt="AI Image"
             className="rounded-2xl h-48 md:h-80 w-full object-contain mb-4 md:mb-0 md:mr-0"

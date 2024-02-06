@@ -1,7 +1,7 @@
 import logogradient from "./assets/logo.svg";
 import logo from "./assets/logo2.svg";
 
-import profile from "./assets/Profile.png";
+// import profile from "./assets/Profile.png";
 // Tech stack images
 import html from "./assets/techstack/html.png";
 import css from "./assets/techstack/css.png";
@@ -49,11 +49,11 @@ export const logos = {
 };
 
 // Enter your Personal Details here
-export const personalDetails = {
-  name: "Govind Kumar",
-  tagline: "I build things for web",
-  img: profile,
-};
+// export const personalDetails = {
+//   name: "Govind Kumar",
+//   tagline: "I build things for web",
+//   img: profile,
+// };
 
 // Enter your Social Media URLs here
 export const socialMediaUrl = {
@@ -90,6 +90,14 @@ export const techStackDetails = {
 // Enter your Project Details here
 export const projectDetails = [
   {
+    title: "Shop Connect",
+    image: projectImage10,
+    description: `Ecommerce Webapp with Admin Panel`,
+    techstack: "Reactjs, Context API",
+    previewLink: "https://expenses-tracker-react-app1.netlify.app/",
+    githubLink: "https://github.com/g3vind/shop-connect",
+  },
+  {
     title: "Swiggy Clone",
     image: projectImage1,
     description: `A Clone of Swiggy's Website`,
@@ -100,10 +108,18 @@ export const projectDetails = [
   {
     title: "Youtube Clone",
     image: projectImage11,
-    description: `Youtube Clone With Functionalities`,
+    description: `A Clone of Youtube's's Website`,
     techstack: "ReactJs, Axios, Tailwind CSS, React Router DOM",
     previewLink: "https://youtube-clone11.vercel.app/",
     githubLink: "https://github.com/g3vind/youtube-clone",
+  },
+  {
+    title: "Ticket Flow",
+    image: projectImage4,
+    description: `Ticket Management Website using NextJS `,
+    techstack: "NextJS, Tailwind CSS , JavaScript",
+    previewLink: "https://cricliveapp.netlify.app/",
+    githubLink: "https://github.com/g3vind/ticket-flow",
   },
   {
     title: "Typing Master",
@@ -144,23 +160,6 @@ export const projectDetails = [
     techstack: "HTML5, CSS3, JavaScript",
     previewLink: "https://search-image-for-you.netlify.app/",
     githubLink: "https://github.com/g3vind/image-search-app",
-  },
-  {
-    title: "CricLive",
-    image: projectImage4,
-    description: `A chrome extension for live cricket updates `,
-    techstack: "HTML5, CSS3 , JavaScript",
-    previewLink: "https://cricliveapp.netlify.app/",
-    githubLink: "https://github.com/g3vind/criclive",
-  },
-
-  {
-    title: "Expense Tracker App",
-    image: projectImage10,
-    description: `App to manage your expenses and income.`,
-    techstack: "Reactjs, Context API",
-    previewLink: "https://expenses-tracker-react-app1.netlify.app/",
-    githubLink: "https://github.com/g3vind/expense-tracker-react",
   },
 ];
 
