@@ -108,7 +108,7 @@ export const projectDetails = [
   {
     title: "Youtube Clone",
     image: projectImage11,
-    description: `A Clone of Youtube's's Website`,
+    description: `A Clone of Youtube's Website`,
     techstack: "ReactJs, Axios, Tailwind CSS, React Router DOM",
     previewLink: "https://youtube-clone11.vercel.app/",
     githubLink: "https://github.com/g3vind/youtube-clone",
